@@ -3,13 +3,42 @@
   height: 821px;
   margin-left: 120px;
   margin-top: 70px;
+  position: relative;
 }
 .blog img{
     width:845px;
     height: 450px;
     border-radius: 8px;
 }
+.intro-info{
+    display: flex;
+    justify-content: space-between;
+    
+}
 .user-image{
     width: 60px;
-    height: 60px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+.body-style{
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 160%;
+    width: 737px;
+    height: 128px;
+    text-align: left;
+}
+.anchor{
+    margin-left: 10px;
+}
+.bookmark{
+    border-style: none;
+    background-color: white;
+    text-align: center;
+}
+.bookmark-container{
+    display: flex;
 }
