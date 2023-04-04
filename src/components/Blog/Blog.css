@@ -1,0 +1,15 @@
+.blog{
+  width: 885px;
+  height: 821px;
+  margin-left: 120px;
+  margin-top: 70px;
+}
+.blog img{
+    width:845px;
+    height: 450px;
+    border-radius: 8px;
+}
+.user-image{
+    width: 60px;
+    height: 60px;
+}
