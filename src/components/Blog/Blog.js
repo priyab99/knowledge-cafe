@@ -18,6 +18,7 @@ const Blog = (props) => {
        <img src={img} alt="" />
     
             <div className='intro-info'>
+                <img className='profile-img' src={image} alt="" />
         
        <div>
        
