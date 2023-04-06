@@ -12,6 +12,7 @@ const Profile = () => {
 
 
 
+
     useEffect(()=>{
         fetch('fakedata.json')
         .then(res=>res.json())

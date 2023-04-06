@@ -12,7 +12,7 @@ const Bookmark = ({mark,time}) => {
                     <h4>Bookmarked Blogs:{mark.length}</h4>
                     {
                         mark.map(text=>
-                            <p className='blog-style'>{text.body}</p>)
+                            <p key={text.id}  className='blog-style'>{text.body}</p>)
                     }
                  </div>
             

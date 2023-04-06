@@ -15,29 +15,30 @@ const Blog = (props) => {
         <div className='blog'>
 
 
-       <img src={img} alt="" />
-    
-            <div className='intro-info'>
-                <img className='profile-img' src={image} alt="" />
-        
-       <div>
-       
-        <h4>{title}</h4>
-        <h5>{date}(days ago)</h5>
-       </div>
-       <div className='bookmark-container'>
-        <p>{time}mins read</p>
-        <button onClick={()=>addBookMark(props.blog)} className='bookmark' ><FontAwesomeIcon icon={faBookmark} /></button>
-       </div>
+        <img src={img} alt="" />
+     
+        <div className='blog-info'> 
+        <img className='profile-img' src={image} alt="" />
 
-       </div>
+        <div className='intro-info'>
+            <div>
+                <p className='name'>{title}</p>
+                <p>{date}(days ago)</p>
 
-       <p className='body-style'>{body}</p>
-       <button onClick={()=>addTime(props.time)} className='read-button' href="/mark">Mark As Read</button>
+            </div>
+            <div className='bookmark-container'>
+            <p>{time}mins read</p>
+            <button onClick={()=>addBookMark(props.blog)} className='bookmark' ><FontAwesomeIcon icon={faBookmark} /></button>
 
-
-            
+            </div>
         </div>
+          
+         
+ 
+          <p className='body-style'>{body}</p>
+        <button onClick={()=>addTime(props.time)} className='read-button' href="/mark">Mark As Read</button>
+         </div>    
+         </div>
     );
 };
 
