@@ -7,9 +7,13 @@ const Bookmark = ({mark,time}) => {
 
     return (
         <div>
-             <h2>spend time on read:{time}</h2>
-                <div className='marked style'>
+             <h2>spend time on read:{time}min</h2>
+                <div className='marked-style'>
                     <h4>Bookmarked Blogs:{mark.length}</h4>
+                    {
+                        mark.map(text=>
+                            <p className='blog-style'>{text.body}</p>)
+                    }
                  </div>
             
         </div>

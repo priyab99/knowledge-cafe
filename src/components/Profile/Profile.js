@@ -23,6 +23,7 @@ const Profile = () => {
 
 
      }
+
      const handleTime=(time)=>{
         const newTime=times+time;
         setTime(newTime);

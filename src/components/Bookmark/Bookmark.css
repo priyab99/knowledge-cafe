@@ -15,5 +15,11 @@ border-radius: 8px;
 }
 .blog-style{
     background-color: white;
-    border-radius: 2px;
+    border-radius: 8px;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 200px;
+
 }
