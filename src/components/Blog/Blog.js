@@ -6,6 +6,9 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Blog = (props) => {
     const{img,image,title,date,time,body}=props.blog;
     const addBookMark=props.addBookMark;
+    
+    
+
     return (
         <div className='blog'>
 
@@ -27,7 +30,7 @@ const Blog = (props) => {
        </div>
 
        <p className='body-style'>{body}</p>
-       <a className='anchor' href="/mark">Mark As Read</a>
+       <button className='read-button' href="/mark">Mark As Read</button>
 
 
             

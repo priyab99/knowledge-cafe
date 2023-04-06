@@ -31,8 +31,9 @@
     height: 128px;
     text-align: left;
 }
-.anchor{
-    margin-left: 10px;
+.read-button{
+    text-decoration: underline;
+    border-style: none;
 }
 .bookmark{
     border-style: none;
