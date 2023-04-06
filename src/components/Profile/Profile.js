@@ -6,6 +6,9 @@ import './Profile.css'
 const Profile = () => {
     const [blogs, setBlogs]=useState([])
     const [mark,setMarks]=useState([])
+    const [times,setTime]=useState(0)
+
+
 
 
     useEffect(()=>{
@@ -20,6 +23,10 @@ const Profile = () => {
 
 
      }
+     const handleTime=(time)=>{
+        const newTime=times+time;
+        setTime(newTime);
+     }
 
     
 
@@ -30,7 +37,9 @@ const Profile = () => {
         {
             blogs.map(blog=> <Blog key={blog.id}
             blog={blog}
+            time={blog.time}
             addBookMark={addBookMark}
+            handleTime={handleTime}
             >
                 
             </Blog> )
@@ -39,7 +48,7 @@ const Profile = () => {
 
             </div>
             <div className='bookmark-container'>
-                <Bookmark mark={mark}></Bookmark>
+                <Bookmark mark={mark} time={times}></Bookmark>
                
 
             </div>

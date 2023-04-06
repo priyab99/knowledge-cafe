@@ -5,17 +5,3 @@
 .bookmark-container{
     display: flex; flex-direction: column;
 }
-.bookmark-container h2{
-    width: 411px;
-height: 80px;
-
-    background-color: #6047EC;
-}
-.bookmark-container h4{
-    padding-top: 10px;
-    width: 411px;
-height: 1352px;
-
-background: rgba(17, 17, 17, 0.05);
-border-radius: 8px;
-}
